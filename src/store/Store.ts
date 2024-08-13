@@ -1,9 +1,9 @@
 import { create } from "zustand";
 
-type Store = {
+interface Store {
   count: number;
   setCount: (count: number) => void;
-};
+}
 
 export const useStore = create<Store>()((set) => ({
   count: 1,
