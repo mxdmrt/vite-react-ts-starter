@@ -1,9 +1,8 @@
 import styled from '@emotion/styled';
 
-import viteLogo from '/vite.svg';
-
 import emotionLogo from './assets/emotion.png';
-import reactLogo from './assets/react.svg';
+import reactLogo from './assets/react.svg?url';
+import viteLogo from './assets/vite.svg?url';
 import zustandLogo from './assets/zustand.png';
 import { useStore } from './store/Store';
 
