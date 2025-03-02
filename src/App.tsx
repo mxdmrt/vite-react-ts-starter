@@ -1,9 +1,11 @@
-import styled from "@emotion/styled";
-import emotionLogo from "./assets/emotion.png";
-import reactLogo from "./assets/react.svg";
-import zustandLogo from "./assets/zustand.png";
-import { useStore } from "./store/Store";
-import viteLogo from "/vite.svg";
+import styled from '@emotion/styled';
+
+import viteLogo from '/vite.svg';
+
+import emotionLogo from './assets/emotion.png';
+import reactLogo from './assets/react.svg';
+import zustandLogo from './assets/zustand.png';
+import { useStore } from './store/Store';
 
 const StyledMain = styled.main`
   display: grid;
@@ -16,7 +18,7 @@ const StyledLogosWrapper = styled.div`
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 
-  @media (min-width: 670px) {
+  @media (width >= 670px) {
     grid-template-columns: repeat(4, 1fr);
   }
 `;
@@ -26,6 +28,7 @@ const StyledLogo = styled.a`
     from {
       transform: rotate(0deg);
     }
+
     to {
       transform: rotate(360deg);
     }
