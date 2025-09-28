@@ -98,7 +98,9 @@ function App() {
       </StyledLogosWrapper>
       <h1>Vite + React + Zustand + Emotion</h1>
       <StyledCard>
-        <button onClick={() => setCount(count + 1)}>count is {count}</button>
+        <button type="button" onClick={() => setCount(count + 1)}>
+          count is {count}
+        </button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
